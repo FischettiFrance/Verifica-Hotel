@@ -9,6 +9,7 @@
       <option [value]="room.id" *ngFor="let room of rooms"> {{room.name}}</option>
     </select> <br>
 
+
     nome: <input #n> <br>
     cognome : <input #c> <br>
     da: <input type = "date" #d> <br>
@@ -18,14 +19,18 @@
 
   </form>
 
+<app-lista [preno]="prenoData"></app-lista>
 
-  {{selectedRoom | json}}
+
+<!--
+ {{selectedRoom | json}}
 
  <ul>
    <li *ngFor="let pren of bookingList">
     {{pren.room.name}} : {{pren | json}}
    </li>
- </ul> 
- 
+ </ul>
+
 
  {{bookingList | json}}
+-->

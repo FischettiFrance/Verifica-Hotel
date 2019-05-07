@@ -1,0 +1,4 @@
+<div *ngFor="let p of preno" style="border:solid; margin-top:10px"  (click)="onClick(p)">
+    {{p.name}} {{p.surname}} {{p.from}} {{p.to}}
+</div>
+<app-dettagli [pDet] = "selectedP"></app-dettagli>
